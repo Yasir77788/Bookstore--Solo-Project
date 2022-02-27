@@ -24,7 +24,7 @@ public class OrderingService {
 	public void placeOrder(Book book, User user) {
 		
 		LocalDateTime now = LocalDateTime.now();
-		//order.setOrderDateTime(now); // temp dealy
+		//order.setOrderDateTime(now); 
 		order.setBookOrdered(book);
 		order.setUser(user);
 		orderRepository.save(order);
